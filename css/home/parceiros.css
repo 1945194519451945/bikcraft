@@ -1,0 +1,37 @@
+.parceiros {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.parceiros h2 {
+  margin-bottom: 40px;
+}
+.parceiros ul {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+.parceiros li {
+  padding: 32px;
+  display: flex;
+
+  border: solid 2px var(--cor-2);
+}
+.parceiros img {
+  margin: auto;
+}
+.parceiros :first-child,
+.parceiros :nth-child(5) {
+  border-left: none;
+  /*neste caso, falando apenas com o primeiro item e o quinto item que está dentro do elemento pai: . parceiros*/
+}
+.parceiros :nth-child(n + 5) {
+  border-bottom: none;
+  /*nth-child serve para falar com um item específico dentro do elemento pai, que no caso é .parceiros. Neste caso, estamos falando apenas com os itens 5 em diante*/
+}
+.parceiros li {
+  border-right: none;
+  border-top: none;
+}

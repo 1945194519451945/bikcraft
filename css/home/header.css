@@ -1,39 +1,33 @@
-body {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   flex-wrap: wrap;
   gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header-menu {
   display: flex;
   gap: 40px;
+  font-family: "poppins";
+  font-weight: 400;
 
   font-size: 18px;
 }
 .header-bg {
-  background-color: black;
+  background-color: var(--cor-12);
 }
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--cor-0);
 }
 .header-menu a::after {
   content: "";
   display: block;
   height: 2px;
   width: 0;
-  background-color: white;
+  background-color: var(--cor-0);
   margin-top: 4px;
   transition: 0.3s;
 }
@@ -42,7 +36,7 @@ a {
 }
 @media (max-width: 800px) {
   .header-menu a {
-    background-color: #111;
+    background-color: var(--cor-11);
     padding: 12px 16px;
     border-radius: 4px;
   }
@@ -53,7 +47,7 @@ a {
     gap: 20px;
   }
   .header-menu a:hover {
-    background-color: #2e2e2e;
+    background-color: var(--cor-10);
   }
 
   @media (max-width: 600px) {
